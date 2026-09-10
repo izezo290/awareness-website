@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Digital Awareness</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="#home" class="logo">Digital Awareness</a>
+
+            <div class="nav-links">
+    <a href="#home">Home</a>
+    <a href="#topics">Topics</a>
+    <a href="#quiz">Security Quiz</a>
+
+    <button id="theme-button" class="theme-button">
+        🌙 Dark Mode
+    </button>
+</div>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Home Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="small-title">DIGITAL SAFETY EDUCATION</p>
+
+                <h1>Learn how to protect your digital life.</h1>
+
+                <p>
+                    Improve your knowledge about online security,
+                    passwords, phishing, privacy, and safe browsing.
+                </p>
+
+                <a href="#topics" class="main-button">Start Learning</a>
+            </div>
+
+            <div class="hero-card">
+                <div class="shield-icon">🛡️</div>
+                <h3>Stay Safe Online</h3>
+                <p>
+                    Small security habits can protect your accounts
+                    and personal information.
+                </p>
+            </div>
+        </section>
+
+        <!-- Topics Section -->
+        <section id="topics" class="topics-section">
+            <div class="section-title">
+                <p class="small-title">LEARN THE BASICS</p>
+                <h2>Digital Security Topics</h2>
+                <p>
+                    Learn the most important ways to protect yourself online.
+                </p>
+            </div>
+
+            <div class="topics-grid">
+
+                <article class="topic-card">
+                    <div class="topic-number">01</div>
+                    <h3>Password Security</h3>
+                    <p>
+                        Learn how to create strong passwords and keep your
+                        accounts protected.
+                    </p>
+                    <ul>
+                        <li>Use long passwords</li>
+                        <li>Do not reuse passwords</li>
+                        <li>Use a password manager</li>
+                    </ul>
+                </article>
+
+                <article class="topic-card">
+                    <div class="topic-number">02</div>
+                    <h3>Phishing</h3>
+                    <p>
+                        Understand how attackers use fake emails and messages
+                        to steal your information.
+                    </p>
+                    <ul>
+                        <li>Check the sender</li>
+                        <li>Do not trust unknown links</li>
+                        <li>Never share sensitive data</li>
+                    </ul>
+                </article>
+
+                <article class="topic-card">
+                    <div class="topic-number">03</div>
+                    <h3>Two-Factor Authentication</h3>
+                    <p>
+                        Add another layer of protection to your online accounts.
+                    </p>
+                    <ul>
+                        <li>Use an authenticator app</li>
+                        <li>Enable 2FA when possible</li>
+                        <li>Protect your backup codes</li>
+                    </ul>
+                </article>
+
+                <article class="topic-card">
+                    <div class="topic-number">04</div>
+                    <h3>Social Engineering</h3>
+                    <p>
+                        Learn how attackers manipulate people into revealing
+                        private information.
+                    </p>
+                    <ul>
+                        <li>Be careful with urgent requests</li>
+                        <li>Verify identities</li>
+                        <li>Do not act under pressure</li>
+                    </ul>
+                </article>
+
+                <article class="topic-card">
+                    <div class="topic-number">05</div>
+                    <h3>Safe Browsing</h3>
+                    <p>
+                        Browse the internet safely and avoid dangerous websites
+                        and downloads.
+                    </p>
+                    <ul>
+                        <li>Check website addresses</li>
+                        <li>Update your browser</li>
+                        <li>Avoid unknown downloads</li>
+                    </ul>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Quiz Section -->
+        <section id="quiz" class="quiz-section">
+            <div class="section-title">
+                <p class="small-title">TEST YOUR KNOWLEDGE</p>
+                <h2>Security Quiz</h2>
+                <p>
+                    Read each situation and choose the safest answer.
+                </p>
+            </div>
+
+            <div class="quiz-box">
+
+                <div class="quiz-progress">
+                    Question <span id="question-number">1</span>
+                    of <span id="total-questions">5</span>
+                </div>
+
+                <h3 id="question-text">
+                    Question will appear here
+                </h3>
+
+                <div id="answers-container" class="answers-container">
+                    <!-- Answers will be added with JavaScript -->
+                </div>
+
+                <p id="feedback" class="feedback"></p>
+
+                <button id="next-button" class="main-button next-button">
+                    Next Question
+                </button>
+
+                <div id="result-container" class="result-container hidden">
+                    <h3>Quiz Completed!</h3>
+                    <p>
+                        Your score:
+                        <span id="score">0</span>
+                        /
+                        <span id="result-total">5</span>
+                    </p>
+
+                    <button id="restart-button" class="main-button">
+                        Try Again
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Digital Awareness. Learn. Think. Stay Safe.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
